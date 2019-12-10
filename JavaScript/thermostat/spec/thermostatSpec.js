@@ -28,5 +28,10 @@ describe('Thermostat', function() {
     }
     expect(thermostat.getCurrentTemperature()).toEqual(10);
   });
+  //loop through temps 0-10 to set to 10 degrees
+
+  it('has a power saving mode on by default', function() {
+    expect(thermostat.isPowerSavingModeOn()).toBe(true);
+  });
 
 });
